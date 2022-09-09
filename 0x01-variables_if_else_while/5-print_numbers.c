@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - program that prints decimal numbers 
+ * main - program that prints decimal numbers
  * Return: Returns true always
  */
 int main(void)
