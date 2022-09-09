@@ -1,4 +1,4 @@
-#include <studio.h>
+#include <stdio.h>
 /**
  * main - Program will Print all the alphabets in lowercase
  * Return: Returns true always
