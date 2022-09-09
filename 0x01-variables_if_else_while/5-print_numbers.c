@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - program that prints all single digit numbers of base 10 
+ * main - program that prints decimal numbers 
  * Return: Returns true always
  */
 int main(void)
