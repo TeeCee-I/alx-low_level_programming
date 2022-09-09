@@ -1,10 +1,10 @@
 #include <stdlib.h>
-#include <time.h>
+#include <stdio.h>
 #include <time.h>
 
 /**
- * main - Positive anything is better than negative nothing
- * Return: Returns trueeverytime
+ * main - Identifies a given number as +ve or -ve
+ * Return: Returns true always
  */
 int main(void)
 {
@@ -26,5 +26,6 @@ int main(void)
 		{
 			printf("%d is positive\n", n);
 		}
+
 		return (0);
 }
