@@ -25,7 +25,7 @@ int main(void)
 	}
 	else if (last_digit == 0)
 	{
-		print("0\n");
+		printf("0\n");
 	}
 
 	return (0);
