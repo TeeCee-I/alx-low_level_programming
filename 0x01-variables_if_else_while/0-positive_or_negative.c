@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include <stdio.h>
+#include <time.h>
 
 /**
  * main - This will tell if a given random number is either +ve or -ve
