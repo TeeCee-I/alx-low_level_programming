@@ -7,7 +7,7 @@ int main(void)
 {
 	int n;
 
-	for (n = 0; <= 9; n = n++)
+	for (n = 0; <= 9; n++)
 		putchar((n % 10) + '0');
 
 	putchar('\n');
