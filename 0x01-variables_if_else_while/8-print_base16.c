@@ -11,12 +11,11 @@ int main(void)
 		putchar((n % 10) + '0');
 
 	for (n = 97; n <= 102; n++)
-		putchar(n);
 	{
-
-	putchar('\n');
+		putchar(n);
 	}
 
+	putchar('\n');
 
-	return (0)
+	return (0);
 }
