@@ -9,13 +9,13 @@ int main(void)
 
 	for (i = 0; i < 10; i++)
 	{
-		putchair((i % 10) + '0');
+		putchar((i % 10) + '0');
 
 		if (i == 9)
 			break;
 
 		putchar(',');
-		putchat(' ');
+		putchar(' ');
 	}
 
 	putchar('\n');
