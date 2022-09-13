@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_alphabet - Funtion to print all the lowercase alphabets 10 times
+ * print_alphabet - Function to print all the lowercase alphabets 10 times
  * Return: Always return void
  */
 void print_alphabet_x10(void)
@@ -15,7 +15,7 @@ void print_alphabet_x10(void)
 
 			for (c = 'a'; c <= 'z'; c++)
 				{	
-					_putchar(c);
+					_putchar(c\n);
 					_putchar('\n');
 			}
 		}
