@@ -1,8 +1,6 @@
 #include "main.h"
 
 /**
- * calling declared header
- * replaced stdio with declared header
  * a program that prints _putchar, followed by a new line
  * The program returns zero
  */
