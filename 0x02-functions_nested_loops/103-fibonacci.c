@@ -1,29 +1,27 @@
 #include <stdio.h>
 
 /**
- * main - finds and prints the sum of the even-valued terms
- * followed by a new line
- * Return: Always 0 (Success)
+ * main - Prints the fibonacci sequence
+ * Return: Zero always
  */
 int main(void)
 {
-	int i;
-	unsigned long int j, k, next, sum;
+	unsigned long int sum = 2;
+	long int prev = 1;
+	long int curr = 2;
 
-	j = 1;
-	k = 2;
-	sum = 0;
-
-	for (i = 1; i <= 33; ++i)
+	while (curr <= 4000000)
 	{
-		if (j < 4000000 && (j % 2) == 0)
-		{
-			sum = sum + j;
-		}
-		next = j + k;
-		j = k;
-		k = next;
-	}
-	Return 0;
-}
+		curr += prev;
+		prev = curr - prev;
 
+		if (curr % 2 == 0)
+		{
+			sum += curr;
+		}
+	}
+	printf("%lu", sum);
+	printf("\n");
+
+	return (0);
+}
