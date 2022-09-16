@@ -2,7 +2,7 @@
 
 /**
  * print_numbers - Prints numbers 0 - 9
- * Return: Always 0
+ * Return: void
  */
 
 void print_numbers(void)
@@ -11,7 +11,7 @@ void print_numbers(void)
 
 	for (c = 0; c <= 9; c++)
 	{
-		_putchar(c);
+		_putchar(c + 'o');
 	}
 
 	_putchar('\n');
