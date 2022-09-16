@@ -7,7 +7,7 @@
 
 void print_numbers(void)
 {
-	int n;
+	int c;
 
 	for (c = 0; c <= 9; c++)
 	{
