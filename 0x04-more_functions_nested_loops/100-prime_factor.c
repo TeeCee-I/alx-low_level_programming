@@ -1,25 +1,25 @@
-#include "main.h"
+#include <stdio.h>
+#include <math.h>
 
 /**
- * print_number - Prints given number
- * @n: given input
- * Return: 0 Always
+ * main - Entry point
+ * Return: - Largest prime factor
  */
-void print_number(int n)
+int main(void)
 {
-	unsigned int k = n;
+	long x, maxf;
+	long number = 612852475143;
+	double square = sqrt(number);
 
-	if (n < 0)
+	for (x = 1; x <= square; x++)
 	{
-		n *= -1;
-		k = n;
-		_putchar('-');
+		if (number % x == 0)
+		{
+			maxf = number / x;
+		}
 	}
 
-	k /= 10;
+	printf("%ld\n", maxf);
 
-	if (k != 0)
-		print_number(k);
-
-	_putchar((unsigned int) n % 10 + '0');
+	return (0);
 }
