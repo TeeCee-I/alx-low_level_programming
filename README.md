@@ -14,8 +14,8 @@ Writing code projects in the following:
 12. a program that generates random valid passwords for the program 101-crackme.
 
 ## **Rules**
-Allowed editors for pointers, Arrays, strings and structures task: vi, vim, emacs
-All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89
+Allowed editors for pointers, Arrays, strings and structures task: vi, vim, emacs <br>
+All your files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89 <br>
 All your files should end with a new line
 A README.md file, at the root of the folder of the project is mandatory
 Your code should use the Betty style. It will be checked using betty-style.pl and betty-doc.pl
