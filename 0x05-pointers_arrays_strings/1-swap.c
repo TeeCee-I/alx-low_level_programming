@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * swap_int - swap the 2 int arguments
- * @a: first input
- * @b: Second input
+ * swap_int - Function name to swap the 2 int arguments
+ * @x: first input
+ * @y: Second input
  * Return: Void
  */
-void swap_int(int *a, int *b)
+void swap_int(int *x, int *y)
 {
-	int temp;
+	int swap;
 
-	temp = *b;
-	*b = *a;
-	*a = temp;
+	swap = *y;
+	*y = *x;
+	*x = swap;
 }
