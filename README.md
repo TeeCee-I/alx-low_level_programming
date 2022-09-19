@@ -1,5 +1,5 @@
 # **ALX 0x05. C - Pointers, arrays and strings**
-Writing code projects in the following:
+Having Fun Writing code projects in the following :yum::
 1. a function that takes a pointer to an int as parameter and updates the value it points to to 98.
 2. a function that swaps the values of two integers.
 3. a function that returns the length of a string.
@@ -14,7 +14,7 @@ Writing code projects in the following:
 12. a program that generates random valid passwords for the program 101-crackme.
 
 ## **Rules**
-- Allowed editoors for pointers, Arrays, strings and structures task: vi, vim, emacs <br>
+- Allowed editors for pointers, Arrays, strings and structures task: vi, vim, emacs <br>
 
 - All files will be compiled on Ubuntu 20.04 LTS using gcc, using the options -Wall -Werror -Wextra -pedantic -std=gnu89 <br>
 
