@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * reset_to_98 - Resets number to 98
+ * reset_to_98 - Function name to reset number to 98
  * @n: Input number
  * Return: Void
  */
