@@ -9,6 +9,7 @@
  */
 
 char *rot13(char *s)
+
 {
 	int p, k;
 
