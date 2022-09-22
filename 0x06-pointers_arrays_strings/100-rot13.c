@@ -16,6 +16,7 @@ char *rot13(char *s)
 	char m[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 	char n[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 	for (k = 0; s[k] != '\0'; k++)
+
 	{
 		for (p = 0; m[p] != '\0'; p++)
 		{
