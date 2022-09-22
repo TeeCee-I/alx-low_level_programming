@@ -1,28 +1,42 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * rot13 - a function to rotate a given string in 13 places
- * @s: pointer to string to be rotated
- * Return: s string after rotating
+ * rot13 - unction that encodes a string using rot13.
+ * @s: Input string
+ * Return: final string
  */
-
 char *rot13(char *s)
 {
-	int p, k;
+	char *p;
+	int count;
 
-	char m[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
-	char n[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
-	for (k = 0; s[k] != '\0'; k++)
+	char alpha[52] = {'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J',
+		'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V',
+		'W', 'X', 'Y', 'Z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h',
+		'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+		'u', 'v', 'w', 'x', 'y', 'z'};
+
+	char swap[52] = {'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
+		'Y', 'Z', 'A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K',
+		'L', 'M', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x',
+		'y', 'z', 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
+		'l', 'm'};
+
+	p = s;
+
+	while (*p != '\0')
 	{
-		for (p = 0; m[p] != '\0'; p++)
+		count = 0;
+		while (count < 52)
 		{
-			if (s[k] == m[p])
+			if (*p == alpha[count])
 			{
-				s[k] = n[p];
+				*p = swap[count];
 				break;
 			}
+			count++;
 		}
+		p++;
 	}
 	return (s);
 }
