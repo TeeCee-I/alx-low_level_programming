@@ -4,8 +4,8 @@
 /**
  * cap_string - A function that capitalizes every
  * character it runs on
- * @s:string variable
- * Return:s result
+ * @s: string variable
+ * Return: s result
  */
 
 char *cap_string(char *s)
