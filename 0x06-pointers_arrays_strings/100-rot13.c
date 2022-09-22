@@ -3,8 +3,8 @@
 
 /**
  * rot13 - a function to rotate a given string in 13 places
- * @s:pointer to string to be rotated
- * Return:s string after rotating
+ * @s: pointer to string to be rotated
+ * Return: s string after rotating
  */
 
 char *rot13(char *s)
