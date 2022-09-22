@@ -5,7 +5,7 @@
  * leet - function that encodes or replaces
  * lettets with numbers in 1337
  * @s:string to be encoded
- * Result:string s
+ * Result: string s
  */
 
 char *leet(char *s)
