@@ -2,7 +2,8 @@
 #include <stdio.h>
 
 /**
- * cap_string - A function that capitalizes first characters
+ * cap_string - A function that capitalizes every
+ * character it runs on
  * @s:string variable
  * Return:s result
  */
