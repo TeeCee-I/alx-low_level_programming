@@ -1,63 +1,38 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * uc - Function changes lower case letters to UPPER CASES
- * @s: Input string
- * Return: void
+ * cap_string - A function that capitalizes first characters
+ * @s:string variable
+ * Return:s result
  */
-void uc(char *s)
-{
-	char *p;
 
-	p = s;
-
-	if (*p >= 97 && *p <= 122)
-	{
-		*p -= 32;
-	}
-}
-
-/**
- * cap_string - Capitalize each word
- * @s: input string
- * Return: Modified strig
- */
 char *cap_string(char *s)
 {
-	char *p;
-	int cap = 0;
+	int k, p;
 
-	p = s;
-	uc(p);
-	while (*p != '\0')
+	p = 0;
+	while (s[p] != '\0')
 	{
-		if (cap == 1)
+		if (s[0] >= 'a' && s[0] <= 'z')
 		{
-			uc(p);
-			cap = 0;
+			s[0] = s[0] - 32;
 		}
 
-		switch (*p)
+		char arr[13] = {' ', '\t', '\n', ',', ';', '.',
+			'!', '?', '"', '(', ')', '{', '}'};
+		
+		for (k = 0; k < 13; k++)
 		{
-			case ' ':
-			case '\t':
-			case '\n':
-			case ',':
-			case ';':
-			case '.':
-			case '!':
-			case '?':
-			case '"':
-			case '(':
-			case ')':
-			case '{':
-			case '}':
-				cap = 1;
-				break;
-			default:
+			if (s[p] == arr[k])
+			{
+				if (s[p + 1] >= 'a' && s[p] <= 'z')
+				{
+					s[p + 1] = s[p + 1] - 32;
+				}
+			}
 		}
 		p++;
 	}
-
 	return (s);
 }
