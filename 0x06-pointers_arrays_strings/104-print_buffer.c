@@ -1,52 +1,58 @@
 #include "main.h"
-#include <ctype.h>
+#include <stdio.h>
+/**
+ * print_line - function that prints a buffer.
+ * @c: buffer to print
+ * @s: bytes of buffer to print
+ * @l: line of buffer to print
+ *
+ * Return: void
+ */
+
+void print_line(char *c, int s, int l)
+{
+int j, k;
+for (j = 0; j <= 9; j++)
+{
+if (j <= s)
+printf("%02x", c[l * 10 + j]);
+else
+printf("  ");
+if (j % 2)
+putchar(' ');
+}
+for (k = 0; k <= s; k++)
+{
+if (c[l * 10 + k] > 31 && c[l * 10 + k] < 127)
+putchar(c[l * 10 + k]);
+else
+putchar('.');
+}
+}
 
 /**
- * print_buffer - Function that prints a buffer.
- * @b: The buffer
- * @size: Buffer Size
+ * print_buffer - prints a buffer
+ * @b: buffer to print
+ * @size: size of buffer
+ *
  * Return: void
  */
 void print_buffer(char *b, int size)
 {
-	int char_count = 0, x, bulk;
-	char *p, *q, *r;
-
-	p = b;
-	q = b;
-	r = p;
-	while (char_count < size)
-	{
-		bulk = (size - char_count) > 9 ? 10 : size - char_count;
-		q += bulk;
-		while(r < q)
-		{
-			printf("%08x:", char_count);
-			for (x = 0; x < 10; x += 2, r++)
-			{
-				if (r >= q)
-				{
-					printf("     ");
-					continue;
-				}
-				printf(" %02x", *(r++));
-				printf("%02x", *r);
-			}
-			r = p;
-			printf(" ");
-			for (x = 0; x < 10; x++, p = q)
-			{
-				if (r >= q)
-					continue;
-				*r = isprint((unsigned int) *r) == 0 ? '.' : *r;
-				printf("%c", *(r++));
-			}
-		}
-		printf("\n");
-		char_count += bulk;
-	}
-	if (size <= 0)
-	{
-		printf("\n");
-	}
+int i;
+for (i = 0; i <= (size - 1) / 10 && size; i++)
+{
+printf("%08x: ", i * 10);
+if (i < size / 10)
+{
+print_line(b, 9, i);
+}
+else
+{
+print_line(b, size % 10 - 1, i);
+}
+putchar('\n');
+}
+if (size == 0)
+putchar('\n');
 }
