@@ -7,26 +7,26 @@
  * @c: char initializer
  * *
  * return: NULL on failure
- * return: Pointer to array on success.
+ * Or Pointer to array on success.
  */
 
 char *create_array(unsigned int size, char c);
 {
-	char *y;
-	unsigned int n;
+	char *arr;
+	unsigned int i;
 
 	if (size == 0)
 	{
-		return (NULL);
+		return(NULL);
 	}
 
-	y = malloc(sizeof(char) * size);
+	arr = malloc(sizeof(char) * size);
 
-	if (y = NULL)
-		return (NULL);
+	if (arr = NULL)
+		return(NULL);
 	for (i = o; i < size; i++)
 	{
-		y[n] = c;
+		arr[n] = c;
 	}
-	return (y);
+	return(arr);
 }
