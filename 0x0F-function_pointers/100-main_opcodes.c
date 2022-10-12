@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * main - Print opcode of a machine.
+ * @argc: Number of arguements.
+ * @argv: Argument vector.
+ *
+ * return: 0
+ */
+
+int main(int argc, char *argv[])
+{
+	int count;
+	int bytes;
+
+	if (argc != 2)
+	{
+		printf("Error\n");
+		exit(1);
+	}
+	bytes = atoi(argv[1]);
+	if (bytes < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
+	for (count = 0; count < bytes; count++)
+	{
+		print("%02hhx", *((char *)main + count));
+		if (count < bytes -1)
+			printf(" ");
+		else
+			printf("\n");
+	}
+	return (0);
+}
+
